@@ -1,32 +1,14 @@
-# Lucent Studio Pro
+# Lucent Studio Pro v2.6
 
-A visual, browser-based script editor for Lucent (AdventureQuest Worlds). Design automation workflows and export Lucent-compatible JavaScript without writing the script manually.
+Static browser-based visual script editor for Lucent.
 
-## Features
+## New in 2.6
+- Complete Quest steps can select a specific reward by its numeric AQW item ID.
+- Default reward behavior remains available.
+- Uses `api.environment.setQuestReward` before completing the quest and clears the selection after successful or failed boolean completion.
+- Five-language UI and existing steps are preserved.
 
-- Drag-and-drop command ordering
-- Permanent and temporary item farming, combat, class changes
-- Quest, inventory, bank, shop and movement operations
-- Conditional logic, loops and project JSON export/import
-- Private room support
-- Five UI languages, with English as the default
-- Light/dark appearance and embedded icon
+## Publish
+Replace repository root `index.html`, commit, and deploy via GitHub Pages.
 
-## Use
-
-Open the GitHub Pages site or download `index.html` and open it in a modern browser. Create a workflow, then export a `.js` file for use in Lucent.
-
-## Deploy with GitHub Pages
-
-1. Create a **public** GitHub repository named `lucent-studio`.
-2. Upload the contents of this package, retaining `.github/workflows/pages.yml`.
-3. Open the repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
-4. After the workflow succeeds, open `https://YOUR_USERNAME.github.io/lucent-studio/`.
-
-## Notes
-
-This is an unofficial third-party editor and is not affiliated with Lucent or Artix Entertainment. Generated scripts have not been comprehensively tested in the game; check scripts before using them. Publishing a public repository exposes all included source code and graphics. Ensure you have permission to redistribute any brand assets before publication.
-
-## License
-
-No open-source license has been selected yet. Copyright and reuse permissions remain reserved until a license is added by the repository owner.
+Note: Live Lucent behavior is not tested. Enter the reward item ID, not its name or option index.
